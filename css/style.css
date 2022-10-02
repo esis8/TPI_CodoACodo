@@ -1,0 +1,144 @@
+:root {
+    --hmain: 100vh;
+    --wmain: 100vw;
+}
+
+
+
+
+
+
+
+nav div p{
+    position: relative;
+    left: -20px;
+    bottom: 5px;
+}
+
+
+.navbar img {
+    height: calc(var(--hmain)*.07);
+}
+
+main {
+    height: 90vh;
+}
+
+.carousel-item img{
+    height: 90vh;
+    filter: brightness(.30);
+    object-fit: cover;
+   
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 20%;
+    left: 40%;
+    width: 50%;
+}
+
+
+img.card-img-top{
+    height: calc(var(--hmain)*.43);
+}
+
+.text-bg-react {
+    background-color: #066d89;
+}
+
+.lugar .card {
+    border-radius: 0;
+}
+
+.text-decoration-dot{
+    text-decoration: underline dotted;
+}
+
+
+#formulario .formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#formulario .btn.btn-success.text-light.w-100.fs-5 {
+    background: #74B72E;
+    border: #74B72E;
+}
+
+#formulario .btn.btn-success.text-light.w-100.fs-5:hover{
+    background: #0A6522;
+    border: #0A6522;
+}
+
+footer {
+    background: #1A4860;
+}
+
+a.text-light.text-decoration-none:hover{
+    color: #0dcaf0!important;
+}
+
+
+@media (min-width: 1500px) and (orientation: landscape){
+    .nav-item a, main p, footer a{
+        font-size: 20px;
+    }
+
+}
+
+/* Mobile Landscape */
+
+@media (max-width: 1023px) and (orientation: landscape) and (max-height: 600px){
+
+    .navbar img {
+        height: calc(var(--hmain)*.1);
+    }
+
+    .carousel-caption {
+        left: 10%;
+        bottom: 10%;
+        width: 80%;
+    }
+
+    div.col{
+        width: 50%;
+    }
+
+    img.card-img-top{
+        height: calc(var(--hmain)*.7);
+    }
+
+    footer div.row.justify-content-center.align-items-center.m-0.text-center{
+
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 1044px) and (orientation: portrait) {
+    
+    .carousel-caption {
+        position: absolute;
+        left: 10%;
+        width: 80%;
+    }
+
+    h1.text-end, p.text-end{
+        text-align: center!important
+    }
+
+    .justify-content-end {
+        justify-content: center!important;
+    }
+   
+    footer div.row.justify-content-center.align-items-center.m-0.text-center{
+
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+}
