@@ -3,12 +3,6 @@
     --wmain: 100vw;
 }
 
-
-
-
-
-
-
 nav div p{
     position: relative;
     left: -20px;
@@ -21,53 +15,29 @@ nav div p{
 }
 
 main {
-    height: 90vh;
-}
-
-.carousel-item img{
-    height: 90vh;
-    filter: brightness(.30);
-    object-fit: cover;
-   
-}
-
-.carousel-caption {
-    position: absolute;
-    bottom: 20%;
-    left: 40%;
-    width: 50%;
-}
-
-
-img.card-img-top{
-    height: calc(var(--hmain)*.43);
-}
-
-.text-bg-react {
-    background-color: #066d89;
-}
-
-.lugar .card {
-    border-radius: 0;
-}
-
-.text-decoration-dot{
-    text-decoration: underline dotted;
-}
-
-
-#formulario .formulario {
+    min-height: 77vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
 }
 
-#formulario #send {
+#promo, #formulario{
+    display: flex;
+    justify-content: center;
+    max-width: 1500px;
+}
+
+#formulario #delete, #formulario #resume {
     background: var(--bs-teal);
     border: var(--bs-teal);
 }
 
-#formulario #send:hover{
+
+#formulario #delete:hover{
+    background: var(--bs-danger);
+    border: var(--bs-danger)
+}
+#formulario #resume:hover{
     background: var(--bs-green);
     border: var(--bs-green);
 }
@@ -96,20 +66,6 @@ a.text-light.text-decoration-none:hover{
         height: calc(var(--hmain)*.1);
     }
 
-    .carousel-caption {
-        left: 10%;
-        bottom: 10%;
-        width: 80%;
-    }
-
-    div.col{
-        width: 50%;
-    }
-
-    img.card-img-top{
-        height: calc(var(--hmain)*.7);
-    }
-
     footer div.row.justify-content-center.align-items-center.m-0.text-center{
 
         display: flex;
@@ -120,20 +76,7 @@ a.text-light.text-decoration-none:hover{
 
 @media (max-width: 1044px) and (orientation: portrait) {
     
-    .carousel-caption {
-        position: absolute;
-        left: 10%;
-        width: 80%;
-    }
-
-    h1.text-end, p.text-end{
-        text-align: center!important
-    }
-
-    .justify-content-end {
-        justify-content: center!important;
-    }
-   
+ 
     footer div.row.justify-content-center.align-items-center.m-0.text-center{
 
         display: flex;
